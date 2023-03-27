@@ -4,17 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-
+    <title>Petey Programs - Portfolio</title>
     <!--Styles-->
+    <link href="resources/css/reset.css]" rel="stylesheet">
+    <link href="resources/css/part-reset.css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
     <!--Fonts?-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
     <!--JS-->
     <script src="resources/js/script.js"></script>
 
 </head>
 <body>
+    <header class="nav-bar">
+        <span class="logo">Petey Programs</span>
+        <nav class="main-nav">
+            <ul>
+                <a href="#"><li>Portfolio</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <header id="page-title">
+            <div class="filter" role="presentation">
+                <h1>Hi, I'm Petey and I like to program. Check out my portfolio!</h1>
+            </div>
+        </header>
+
+        <section id="portfolio">
+
+            <!--Could add tech stack svgs to project cards-->
+
+            <div class="project-card" id="life-coach">
+                <div class="project-title" role="presentation">
+                    <h2>Life Coach</h2>
+                </div>
+                <div class="project-image-container" role="presentation">
+                    <img src="./resources/images/life-coach-jeremy.jpeg">
+                </div>
+                <div class="description" role="presentation">
+                    <p>Silly random generated advice</p>
+                </div>
+                <div class="links" role="presentation">
+                    <div class="github">
+                        <a href="https://github.com/pkeen/life-coach">GitHub</a>
+                    </div>
+                    <div class="demo">
+                        <a href="https://pkeen.github.io/life-coach/">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" id="control-freq">
+                <div class="project-title" role="presentation">
+                    <h2>Control Freq</h2>
+                </div>
+                <div class="project-image-container" role="presentation">
+                    <img src="./resources/images/little-control-freq.png">
+                </div>
+                <div class="description" role="presentation">
+                    <p>Creative frequency controller device for Max for Live</p>
+                </div>
+                <div class="links" role="presentation">
+                    <div class="github">
+                        <a href="https://github.com/pkeen/life-coach">GitHub</a>
+                    </div>
+                    <div class="demo">
+                        <a href="https://pkeen.github.io/life-coach/">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" id="another">
+                <div class="project-title" role="presentation">
+                    <h2>Another Project</h2>
+                </div>
+                <div class="project-image-container" role="presentation">
+                    <img src="./resources/images/life-coach-jeremy.jpeg">
+                </div>
+                <div class="description" role="presentation">
+                    <p>Silly random generated advice</p>
+                </div>
+                <div class="links" role="presentation">
+                    <div class="github">
+                        <a href="https://github.com/pkeen/life-coach">GitHub</a>
+                    </div>
+                    <div class="demo">
+                        <a href="https://pkeen.github.io/life-coach/">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="contact">
+            <div class="form-background" role="presentation"></div>
+            <div class="form-title flex-center">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="form-sub flex-center">
+                <p>Please note this form doesn't currently do anything</p>
+            </div>
+          
+            
+            <form action="contact.html" method="POST">
+                <!--Name-->
+                    <label for="name" class="name-label">Name</label>
+                    <input type="text" name="name" id="name">
+                
+                <!--Email-->
+                    <label for="email" class="email-label">Email</label>
+                    <input type="email" name="email" id="email">
+           
+                <!--Message-->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="4" rows="60"></textarea>
+           
+                <!--Submit-->
+                <input type="submit" value="Send" class="submit">
+
+            </form>
+            </div>
+
+
+        </section>
+    </main>
 </body>
 </html>
