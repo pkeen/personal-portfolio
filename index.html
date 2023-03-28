@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petey Programs - Portfolio</title>
     <!--Styles-->
-    <link href="resources/css/reset.css]" rel="stylesheet">
+    <link href="resources/css/reset.css" rel="stylesheet">
     <link href="resources/css/part-reset.css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
     <!--Fonts?-->
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
     <!--JS-->
-    <script src="resources/js/script.js"></script>
+    <script src="resources/js/script.js" defer></script>
 
 </head>
 <body>
@@ -35,13 +35,17 @@
             </div>
         </header>
 
-        <section id="portfolio">
+        <section id="portfolio" class="page-margin">
 
             <!--Could add tech stack svgs to project cards-->
 
             <div class="project-card" id="life-coach">
                 <div class="project-title" role="presentation">
                     <h2>Life Coach</h2>
+                </div>
+                <div class="more-info" hidden>
+                    <p>The goal of this project was to create my first interactive javascript site.</p>
+                    <p>This project uses vanilla javascript to create a random message returned to the user</p>
                 </div>
                 <div class="project-image-container" role="presentation">
                     <img src="./resources/images/life-coach-jeremy.jpeg">
@@ -63,6 +67,10 @@
                 <div class="project-title" role="presentation">
                     <h2>Control Freq</h2>
                 </div>
+                <div class="more-info" hidden>
+                    <p>Control freq uses FFT analysis of a sound singal to compress and expand frequencies based on a side-chain input signal</p>
+                    <p>The + and - controls allow us to make our sound closer or further away from the side-chain</p>
+                </div>
                 <div class="project-image-container" role="presentation">
                     <img src="./resources/images/little-control-freq.png">
                 </div>
@@ -83,6 +91,10 @@
                 <div class="project-title" role="presentation">
                     <h2>Another Project</h2>
                 </div>
+                <div class="more-info" hidden>
+                    <p>The goal of this project was to create my first interactive javascript site.</p>
+                    <p>This project uses vanilla javascript to create a random message returned to the user</p>
+                </div>
                 <div class="project-image-container" role="presentation">
                     <img src="./resources/images/life-coach-jeremy.jpeg">
                 </div>
@@ -102,7 +114,7 @@
 
         </section>
 
-        <section id="contact">
+        <section id="contact" class="page-margin">
             <div class="form-background" role="presentation"></div>
             <div class="form-title flex-center">
                 <h2>Contact Me</h2>

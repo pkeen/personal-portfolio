@@ -18,6 +18,18 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
     align-items: center;
 }
 
+.page-margin {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .page-margin {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
 /*
 Nav Bar
 */
@@ -106,7 +118,11 @@ Portfolio
     border-color: hsl(0, 0%, 5%);
     display: grid;
     grid-template-rows: 2fr 3fr 2fr 1fr;
-    
+}
+
+.project-card:hover {
+    background-color: hsla(0, 0%, 30%, 1);
+    cursor: pointer;
 }
 .project-card * {
     text-align: center;
@@ -144,6 +160,11 @@ Portfolio
 .links {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.more-info {
+    justify-content: center;
     align-items: center;
 }
 
@@ -226,7 +247,6 @@ Portfolio
     width: 100%;
     grid-gap: 10px 5px;
     padding: .5rem;
-    
 }
 
 #contact form label {
@@ -246,4 +266,34 @@ Portfolio
 
 .sumbit {
     grid-column: 3 / span 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .form-background {
+        grid-area: 1 / 4 / span 3 / span 6;
+    }
+    .form-title {
+        grid-area: 1 / 4 / span 1 / span 6;
+    }
+    .form-sub {
+        grid-area: 2 / 4 / span 1 / span 6;
+    }
+    #contact form {
+        grid-area: 3 / 4 / span 1 / span 6;
+
+}
+
+@media only screen and (max-width: 488px) {
+    .form-background {
+        grid-area: 1 / 1 / span 3 / span 12;
+    }
+    .form-title {
+        grid-area: 1 / 1 / span 1 / span 12;
+    }
+    .form-sub {
+        grid-area: 2 / 1 / span 1 / span 12;
+    }
+    #contact form {
+        grid-area: 3 / 1 / span 1 / span 12;
 }
